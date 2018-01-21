@@ -2,7 +2,7 @@ import itertools
 from operator import itemgetter, attrgetter, methodcaller
 
 #MEMBUKA FILE EKSTERNAL
-f = open('data.txt')
+f = open('sample5.txt')
 size = int(f.readline())
 
 #MENYUSUN STRUKTUR DATA AWAL PADA MATRIKS
@@ -168,13 +168,10 @@ def printmatrix(matrix, size):
 			print(matrix[z][y]),
 		print
 
-printmatrix(matrix, size)
 for z in range(len(blankspace)):
 	print blankspace[z]
 for z in range(len(wordsdata)):
 	print wordsdata[z]
-for z in range(len(bruteforce)):
-	print bruteforce[z]
 printmatrix(matrix, size)
 
 #MENUTUP FILE EKSTERNAL
